@@ -15,16 +15,12 @@ public class Main {
     public static void main(String[] args){
 
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        Movie m1 = (Movie) context.getBean("movieA", Movie.class);
+        Movie m1 = (Movie) context.getBean("movie", Movie.class);
         System.out.println("Bean File Loaded using ApplicationContext");
         m1.display();
 
-        Movie m2 = (Movie) context.getBean("movieB", Movie.class);
+        Movie m2 = (Movie) context.getBean("movie2", Movie.class);
         m2.display();
-
-        System.out.println("Equality of the two beans");
-        System.out.println(m1==m2);
-
 
     }
 }

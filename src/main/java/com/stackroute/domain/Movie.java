@@ -7,6 +7,9 @@ public class Movie {
         this.actor = actor;
     }
 
+    public Movie() {
+    }
+
     public Actor getActor() {
         return actor;
     }

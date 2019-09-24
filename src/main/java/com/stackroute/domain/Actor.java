@@ -12,6 +12,9 @@ public class Actor {
         this.age = age;
     }
 
+    public Actor() {
+    }
+
     public String getName() {
         return name;
     }
