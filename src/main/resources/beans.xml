@@ -14,7 +14,6 @@
         <property name="age" value="41"/>
     </bean>
 
-    <bean id="blcd" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
-
-    </bean>
+    <bean id="blcd" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
+    <bean id="bppd" class="com.stackroute.demo.BeanPostProcessorDemoBean"/>
 </beans>
