@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
-
     <bean id="movie" class="com.stackroute.domain.Movie"  autowire="byName">
 
     </bean>
 
-    <bean id="movie2" class="com.stackroute.domain.Movie" >
-        <constructor-arg name="actor">
-            <ref bean="actor1"/>
-        </constructor-arg>
-    </bean>
     <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="Bill Hader"/>
         <property name="gender" value="male"/>
         <property name="age" value="41"/>
-    </bean>
-    <bean id="actor1" class="com.stackroute.domain.Actor">
-        <property name="name" value="Fred Armisen"/>
-        <property name="gender" value="male"/>
-        <property name="age" value="52"/>
     </bean>
 </beans>

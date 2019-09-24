@@ -19,8 +19,6 @@ public class Main {
         System.out.println("Bean File Loaded using ApplicationContext");
         m1.display();
 
-        Movie m2 = (Movie) context.getBean("movie2", Movie.class);
-        m2.display();
 
     }
 }
