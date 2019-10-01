@@ -18,14 +18,14 @@ public class Main {
         System.out.println("Bean File Loaded using XmlBeanFactory");
 
         Movie m = (Movie) factory.getBean("movie1",Movie.class);
-        m.display();
+        m.getActorDetails();
 
         //Using ApplicationContext
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("Bean File Loaded using ApplicationContext");
 
         Movie m2 = (Movie) context.getBean("movie2",Movie.class);
-        m2.display();
+        System.out.println(m2.getActorDetails());
 
         //Using BeanDefinitionRegistry and BeanDefinitionReader
         BeanDefinitionRegistry registry = new XmlBeanFactory(new ClassPathResource("beans.xml"));
@@ -35,6 +35,6 @@ public class Main {
 
 
         Movie m3 = (Movie) factory1.getBean("movie3", Movie.class);
-        m3.display();
+        System.out.println(m3.getActorDetails());
     }
 }

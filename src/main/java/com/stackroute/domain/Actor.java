@@ -38,7 +38,7 @@ public class Actor {
         this.age = age;
     }
 
-    public void display(){
-        System.out.println(this.name + ", " + this.age + ", " + this.gender);
+    public String getActorDetails(){
+        return this.name + ", " + this.age + ", " + this.gender;
     }
 }

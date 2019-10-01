@@ -20,7 +20,7 @@ public class Movie {
         this.actor = actor;
     }
 
-    public void display(){
-        actor.display();
+    public String getActorDetails(){
+        return actor.getActorDetails();
     }
 }
